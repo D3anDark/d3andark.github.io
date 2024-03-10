@@ -5,17 +5,18 @@ body, html {
     height: 100%;
 }
 
-h1 {
+h1{
+    display: flex;
     text-align: center;
     font-size: 95px;
     font-family: 'Clash Display', sans-serif;
-    color: white;
+    color: rgba(255, 255, 255, 0.84);
     text-shadow: 0 0 10px #ffffff;
     margin: auto;
     align-items: center;
     justify-content: center;
-    height: 80px;
     display: flex;
+    height: 80vh;
 }
 
 #content {
@@ -157,11 +158,9 @@ body {
         font-size: 18px;
     }
 
-    .button {
+    #button {
         flex-direction: column;
-    }
-
-    button {
+        justify-items: center;
         margin-bottom: 20px;
         margin-right: 10px;
         font-size: 20px;
@@ -169,15 +168,15 @@ body {
 
     h1 {
         font-size: 3em;
+        height: 45vh;
     }
 
     p {
         font-size: 1em;
-    }
-    #circle {
-        display: none;
+        height: 40vh;
     }
     a{
+        z-index: 2;
         font-size: 1em;
     }
 }
@@ -187,11 +186,8 @@ body {
         font-size: 16px;
     }
 
-    .button {
+    #button {
         flex-direction: column;
-    }
-
-    button {
         margin-bottom: 15px;
         font-size: 19px;
     }
@@ -202,8 +198,5 @@ body {
 
     p {
         font-size: 0.8em;
-    }
-    #circle {
-        display: none;
     }
 }
