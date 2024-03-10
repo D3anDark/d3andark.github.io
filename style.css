@@ -55,12 +55,12 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transition: color 0.5s ease, opacity 0.5s ease, background-color 0.5s ease, transform 0.4s ease;
 }
 a:hover{
     background-color: #111;
     box-shadow: 0 0 20px #8006da;
     text-shadow: 0 0 20px #8006da;
-    transition: color 0.5s ease, opacity 0.5s ease, background-color 0.5s ease, transform 0.4s ease;
     transform: scale(1.1);
 }
 a:visited {
