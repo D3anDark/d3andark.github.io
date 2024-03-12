@@ -41,5 +41,22 @@
     <div class="line"></div>
 </div>
 <script src="script.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Pobierz wszystkie elementy z klasą "line"
+        var lines = document.querySelectorAll('.line');
+
+        // Ustaw zdarzenie na zakończenie animacji
+        lines.forEach(function(line) {
+            line.addEventListener('animationiteration', function() {
+                // Po zakończeniu animacji przesuń linię o losową wartość w poziomie
+                var randomOffset = Math.floor(Math.random() * 100) + 'vw';
+                line.style.left = randomOffset;
+            });
+        });
+    });
+</script>
+    
 </body>
 </html>
