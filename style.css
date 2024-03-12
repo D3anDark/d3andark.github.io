@@ -10,7 +10,12 @@
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
+
 
 body, html {
     margin: 0;
@@ -95,10 +100,6 @@ h1 {
 
     border: 3px;
     text-shadow: 0 0 10px #ffffff;
-
-      -webkit-user-select: none; /* Safari */
-      -ms-user-select: none; /* IE 10 and IE 11 */
-      user-select: none; /* Standard syntax */
 }
 
 .links a {
