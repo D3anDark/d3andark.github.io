@@ -23,8 +23,7 @@ body, html {
 
     background-color: #181a1b;
     width: 100vw;
-    height: 100%;
-    min-height: 100vh;
+    height: 100vh;
 
     font-family: system-ui, -apple-system, var(--font-family), Roboto, sans-serif;
     font-style: normal;
@@ -33,8 +32,10 @@ body, html {
     scroll-behavior: smooth;
     position: relative;
     overflow: hidden;
+}
 
-    cursor: url("");
+body, html {
+    min-height: 100vh;
 }
 
 @font-face {
@@ -88,33 +89,58 @@ h1 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 24px;
+    gap: 14vh;
 }
 
-.links {
-    position: relative;
-    z-index: 1;
+.about_content{
+    color: #fff;
+}
 
+.info{
+    z-index: 14;
+    position: relative;
     display: flex;
+
+    font-family: 200 24px/26px var(--font-family);
+    background-color: #3b3838;
+    opacity: 75%;
+    border-radius: 20px;
+
+
     justify-content: center;
-    align-items: center;
-    gap: 24px;
+    padding: 20px;
+    margin: 10px;
+
+    clip-path: border-box;
+    max-width: max-content;
+    max-height: max-content;
+    width: 80vw;
+    height: max-content;
+
+    left: 10%;
+    gap: 36px;
 
     border: 3px;
-    text-shadow: 0 0 10px #ffffff;
+}
+#Sit{
+    text-decoration: none;
+    color: white;
+    text-shadow: 0 0 10px #111;
 }
 
-.links a {
-    padding: 10px 20px;
+.content #back{
+    padding: 10px;
+    margin-left: 3vw;
 
     max-width: max-content;
     width: 100%;
-    min-width: 189px;
+    min-width: 122px;
 
-    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    transform: translateY(-110px);
+
 
     background-color: #2f2f2f;
     border-radius: 16px;
@@ -127,20 +153,11 @@ h1 {
 
     transition: color 0.5s ease, opacity 0.5s ease, background-color 0.5s ease, transform 0.4s ease;
 }
-
-#link:active{
-    transform: scale(0.9);
-}
-
-a:hover {
+.content #back:hover{
     background-color: #111;
     box-shadow: 0 0 20px #8006da;
     text-shadow: 0 0 20px #8006da;
-    transform: scale(1.1);
-}
-
-a:visited {
-    color: white;
+    transform: scale(1.1) translateY(-110px);
 }
 
 /*lines*/
@@ -162,12 +179,11 @@ a:visited {
     height: 200vh;
     top: -30vh;
     left: 50%;
-    /* background: rgba(255, 255, 255, 0.1); */
     overflow: hidden;
     transform: rotate(-45deg);
 }
 
-.line::after {
+.line:after {
     content: "";
     display: block;
     position: absolute;
@@ -202,7 +218,7 @@ a:visited {
         top: -50%;
     }
     100% {
-        top: 150%; /* Zwiększono wartość, aby animacja wychodziła poza dolny róg ekranu */
+        top: 150%;
     }
 }
 
@@ -212,56 +228,61 @@ a:visited {
     position: absolute;
     top: 0;
 
-    height: 100vh;
+    height: 100%;
     width: 100vw;
 
-    /*background-color: #000000;*/
-    /*background-image: url("");*/
     background-repeat: no-repeat;
     background-size: cover;
-    /*background-position: 50% 50%;*/
 }
 
-/*Mobile view*/
+/* Mobile view */
 @media screen and (max-width: 600px) {
     body {
         font-size: 18px;
     }
 
     h1 {
-        font-size: 3em;
-        height: 45vh;
+        font-size: 4em;
+        height: auto;
     }
 
     p {
         font-size: 1em;
-        height: 40vh;
-    }
-    a{
-        z-index: 2;
-
-        width: 200px;
-
-        font-size: 1em;
-    }
-}
-@media screen and (max-width: 360px) {
-    body {
-        font-size: 16px;
-    }
-    h1 {
-        font-size: 3em;
-    }
-    p {
-        font-size: 0.8em;
-    }
-}
-@media (width <= 660px) {
-    .content {
-        gap: 56px;
+        height: auto;
     }
 
-    .links {
-        flex-direction: column;
+    @media screen and (max-width: 360px) {
+        body {
+            font-size: 16px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        p {
+            font-size: 1em;
+        }
+    }
+
+    @media (max-width: 660px) {
+        .content {
+            gap: 20vh;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            max-height: max-content;
+            max-width: max-content;
+            font-size: 0.75em;
+            /*top: -50%;*/
+            left: 8%;
+            transform: translateY(-18%);
+            box-sizing: border-box;
+        }
+        #back{
+
+        }
     }
 }

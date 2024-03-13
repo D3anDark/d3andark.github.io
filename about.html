@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="language" content="English">
+    <meta name="discription" content="Site made by and about DeanDark">
+    <meta name="author" content="DeanDark">
+    <title>About DeanDark</title>
+    <link rel="stylesheet" href="style-about.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="shortcut icon" href="images/DeanDarkOdznaka.png" type="image/x-icon">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="particles-js"></div>
+
+<div class="content">
+
+    <a href="./" id="back">
+        < &nbsp BACK
+    </a>
+
+    <header>
+    <h1>
+        <b> About </b>
+    </h1>
+    </header>
+    <main>
+    <div class="about_content">
+
+        <p class="info">
+            I am DeanDark, or Junior Developer. I'm learning to program on my own, in a bigger way. And I've been learning it since I was 10 years old, and at the age of 7 I had my first exposure to the computer exclusively. Sometimes I couldn't see what I was doing (Sometimes it still happens).
+            <br>
+            &nbsp
+            <br>
+            I like playing video games, programming, astronomy, geopolitics, learning new interesting things, etc. Sometimes in my free time I read books (this is really rare, because of my dyslexia, sometimes I have difficulty with this), and I draw.
+            <br>
+            Most often I play games such as - Stardew Valley, Overwatch 2, Minecraft, Osu!, Euro Track Simulator 2, etc.
+            <br>
+            &nbsp
+            <br>
+            I can such languages as Polish (Native), English, and so a bit of Silesian and Italian (This Italian please take at a distance).
+            <br>
+            And the programming languages I can do are HTML, CSS, Python, TypeScript, SQL and want to learn more of them!
+            <br>
+            &nbsp
+            <br>
+            I have also been moderating the bot community StartIT for a while now.
+        </p>
+    </div>
+    </main>
+</div>
+<div class="lines">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+</div>
+
+<script src="script.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Pobierz wszystkie elementy z klasą "line"
+        var lines = document.querySelectorAll('.line');
+
+        // Ustaw zdarzenie na zakończenie animacji
+        lines.forEach(function(line) {
+            line.addEventListener('animationiteration', function() {
+                // Po zakończeniu animacji przesuń linię o losową wartość w poziomie
+                var randomOffset = Math.floor(Math.random() * 100) + 'vw';
+                line.style.left = randomOffset;
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
