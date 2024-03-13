@@ -256,7 +256,7 @@ a:visited {
 }
 @media (width <= 660px) {
     .content {
-        gap: 56px;
+        gap: 0px;
     }
 
     .links {
