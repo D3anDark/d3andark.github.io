@@ -131,6 +131,7 @@ h1 {
 }
 
 .back{
+    z-index: 1;
     padding: 3vh;
 }
 
@@ -266,6 +267,10 @@ h1 {
         }
 
         h1 {
+            z-index: 500;
+
+            height: 5px;
+
             font-size: 2.5em;
         }
 
@@ -276,6 +281,9 @@ h1 {
 
     @media (max-width: 660px) {
         .content {
+
+            transform: translateY(5%);
+
             gap: 20vh;
         }
 
@@ -290,16 +298,18 @@ h1 {
             transform: translateY(-18%);
             box-sizing: border-box;
         }
-        .content #back {
-            padding: 8px; /* zmniejszenie paddingu na mniejszych ekranach */
-            margin: 0 auto; /* ustawienie marginesu na auto, aby wyśrodkować przycisk */
-            max-width: 90%; /* zmniejszenie szerokości na mniejszych ekranach */
-            min-width: auto; /* usuń min-width na mniejszych ekranach */
-            font-size: 14px; /* zmniejszenie rozmiaru czcionki */
-            transform: translateY(-80px); /* zmiana przesunięcia */
+            .back {
+            z-index: 1;
+
+            padding: 8px;
+            margin: 0 auto;
+            max-width: 90%;
+            min-width: auto;
+            font-size: 14px;
+            transform: translateY(800px);
         }
 
-        .content #back:hover {
+            .back:hover {
             box-shadow: 0 0 15px #8006da; /* zmiana rozmiaru cienia przy najechaniu */
             text-shadow: 0 0 15px #8006da; /* zmiana cienia tekstu przy najechaniu */
             transform: scale(1.05) translateY(-80px); /* zmiana transformacji przy najechaniu */
