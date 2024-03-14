@@ -288,23 +288,31 @@ h1 {
         }
 
         .info {
-            display: flex;
             flex-direction: column;
             max-height: max-content;
             max-width: max-content;
             font-size: 0.75em;
-            /*top: -50%;*/
             left: 8%;
             transform: translateY(-18%);
             box-sizing: border-box;
+
         }
-            .back {
+
+        .info a{
+
+
+            margin: 0;
+            padding: 0;
+        }
+
+        .back {
             z-index: 1;
 
             padding: 8px;
             margin: 0 auto;
             max-width: 90%;
             min-width: auto;
+
             font-size: 14px;
             transform: translateY(800px);
         }

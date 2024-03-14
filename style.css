@@ -126,7 +126,7 @@ h1 {
     transition: color 0.5s ease, opacity 0.5s ease, background-color 0.5s ease, transform 0.4s ease;
 }
 
-#link:active{
+#links a:active{
     transform: scale(0.9);
 }
 
@@ -255,9 +255,6 @@ a:visited {
     }
 }
 @media (width <= 660px) {
-    .content {
-        gap: 0px;
-    }
 
     .links {
         flex-direction: column;

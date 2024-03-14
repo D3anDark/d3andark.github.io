@@ -22,19 +22,19 @@
     </h1>
 
     <div class="links">
-        <a href="./about" id="link">
+        <a href="./about">
             About
         </a>
 
-        <a href="https://github.com/d3andark" target="_blank" id="link">
+        <a href="https://github.com/d3andark" target="_blank">
             GitHub
         </a>
 
-        <a href="https://discord.com/users/328161853211541506" target="_blank" id="link">
+        <a href="https://discord.com/users/328161853211541506" target="_blank">
             Discord
         </a>
 
-        <a href="https://discord.gg/QGXvmTJ3b3" target="_blank" id="link">
+        <a href="https://discord.gg/QGXvmTJ3b3" target="_blank">
             DeanDark's Corner
         </a>
     </div>
@@ -48,10 +48,8 @@
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
-        // Pobierz wszystkie elementy z klasą "line"
         var lines = document.querySelectorAll('.line');
 
-        // Ustaw zdarzenie na zakończenie animacji
         lines.forEach(function(line) {
             line.addEventListener('animationiteration', function() {
                 // Po zakończeniu animacji przesuń linię o losową wartość w poziomie
