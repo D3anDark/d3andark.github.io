@@ -377,6 +377,8 @@ main{
             font-size: 0.75em;
             transform: translateY(-18%);
             box-sizing: border-box;
+
+            padding-bottom: 20px;
         }
 
         .info a{
