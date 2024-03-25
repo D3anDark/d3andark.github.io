@@ -100,9 +100,9 @@ h1 {
 }
 .languageSwitch{
     z-index: 53;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -301,7 +301,7 @@ main{
 
 /*Stars*/
 #particles-js {
-    z-index: 3;
+    z-index: 1;
     position: absolute;
     top: 0;
 
@@ -349,6 +349,7 @@ main{
 
     @media (max-width: 660px) {
         .content {
+            z-index: -1;
 
             transform: translateY(5%);
 
@@ -356,6 +357,8 @@ main{
         }
 
         .about_content {
+            z-index: -1;
+
             gap: 20px;
 
             padding: 10px;
@@ -364,6 +367,7 @@ main{
         }
 
         .info {
+            z-index: -1;
 
             opacity: 80%;
             flex-direction: column;
@@ -376,17 +380,21 @@ main{
         }
 
         .info a{
-
-
             margin: 0;
             padding: 0;
         }
 
         .languageSwitch{
+            z-index: 100;
+
             width: max-content;
             align-content: center;
             align-items: center;
             align-self: center;
+        }
+
+        #particles-js {
+            z-index: 0;
         }
 
         .back {
@@ -398,7 +406,7 @@ main{
             min-width: auto;
 
             font-size: 14px;
-            transform: translateY(800px);
+            transform: translateY(8000px);
         }
 
             .back:hover {
