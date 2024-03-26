@@ -362,6 +362,8 @@ main{
             gap: 20px;
 
             padding: 10px;
+            padding-bottom: 50px;
+
             margin: 10px;
             max-width: 100vw;
         }
@@ -377,8 +379,6 @@ main{
             font-size: 0.75em;
             transform: translateY(-18%);
             box-sizing: border-box;
-
-            padding-bottom: 30px;
         }
 
         .info a{
