@@ -5,76 +5,68 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="language" content="English">
-    <meta name="discription" content="DeanDark's site">
-    <meta name="author" content="DeanDark">
-    <meta name="theme-color" content="#8006da" >
-    <meta property="og:title" content="DeanDark's Site" >
-    <meta property="title" content="DeanDark's Site">
-    <meta property="description" content="Website that's made for and by DeanDark">
-    <meta property="og:description" content="Website that's made for and by DeanDark">
-    <meta property="og:url" content="https://deandark.me">
-    <meta property="og:image" content="https://deandark.me/DeanDarkOdznaka.png">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="DeanDark">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:locale:alternate" content="pl_PL">
-    <title>DeanDark</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <link rel="shortcut icon" href="DeanDarkOdznaka.png" type="image/x-icon">
-    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@500&display=swap" rel="stylesheet">
+    <title>Bożydar</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<div id="particles-js"></div>
-<div class="content">
-    <h1>
-       <b> DeanDark </b>
-    </h1>
 
-    <div class="links">
-        <a href="./about">
-            About
-        </a>
+<div class="container">
+        <h1>
+            Hi! I'm Bożydar
+        </h1>
 
-        <a href="https://github.com/d3andark" target="_blank">
-            GitHub
-        </a>
+        <h2 class="second-text">
+            I'm a beginner developer, I'm learning JavaScript, HTML, CSS and Python
+        </h2>
 
-        <a href="https://discord.com/users/328161853211541506" target="_blank">
-            Discord
-        </a>
+    <div class="buttons">
 
-        <a href="https://discord.gg/QGXvmTJ3b3" target="_blank">
-            DeanDark's Corner
-        </a>
+    <a href="https://discord.com/users/869292061537484870" target="_blank">
+        <button class="custom-button-discord">Discord</button>
+    </a>
+
+
+    <a href="https://github.com/b0zydar" target="_blank">
+        <button class="custom-button-github">GitHub</button>
+    </a>
+
     </div>
+
 </div>
-<div class="lines">
-    <div class="line"></div>
-    <div class="line"></div>
-    <div class="line"></div>
+
+<div class="content">
+
+    <div class="AboutMeTitle">
+        <p>
+            About me
+        </p>
+    </div>
+
+    <div class="AboutMeText">
+        Hi! My name is <b>Bożydar</b> and I have recently started learning to program. I experienced my first mouse click at the age of six. Although the path to mastering coding is not easy for me, and sometimes, when something doesn't work out, frustration takes over.
+        <br>
+        &nbsp;
+        <br>
+        My first game was Minecraft – a game with which I have many memories associated. Currently, I am a fan of games from Rockstar Games. I play titles such as Red Dead Redemption II, all the installments of Grand Theft Auto (although GTA SA remains my favorite), and consistently Minecraft.
+        <br>
+        &nbsp;
+        <br>
+        Now, I am working on my own bot for Discord, which, I think, will not see the light of day, but it is a form of learning for me.
+        <br>
+        &nbsp;
+        <br>
+        For several years, I have been trying to master two languages: German and English (and at one time, Russian) and I am trying to get to know my native language, which is Polish, because I am sure that more than one word in this language is a mystery to me, despite it being my mother tongue.
+    </div>
+
 </div>
+
+<footer>
+        <p>
+            Made with ❤️ by <a href="https://deandark.me/"><b>DeanDark</b></a> for <b>Bożydar</b>
+        </p>
+
+</footer>
 <script src="script.js"></script>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        var lines = document.querySelectorAll('.line');
-        var randomOffset = Math.floor(Math.random() * 100) + 'vw';
-        // Przesuń linię o losową wartość w poziomie
-        lines.forEach(function(line) {
-            line.style.left = randomOffset;
-        });
-        // Po zakończeniu animacji przesuń linię o losową wartość w poziomie
-        lines.forEach(function(line) {
-            line.addEventListener('animationiteration', function() {
-                // Po zakończeniu animacji przesuń linię o losową wartość w poziomie
-                var randomOffset = Math.floor(Math.random() * 100) + 'vw';
-                line.style.left = randomOffset;
-            });
-        });
-    });
-</script>
-
 </body>
 </html>
