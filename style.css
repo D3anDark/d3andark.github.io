@@ -306,4 +306,13 @@ a:visited {
         max-width: max-content;
         transform: translateY(-40px);
     }
+
+    .links_c2 {
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        align-self: center;
+        max-width: max-content;
+        transform: translateY(-40px);
+    }
 }
