@@ -316,3 +316,32 @@ a:visited {
         transform: translateY(-40px);
     }
 }
+@media (width <= 850px) {
+
+    h1 {
+        font-size: 3em;
+        height: 30vh;
+    }
+
+    .links {
+        position: relative;
+
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        align-self: center;
+        max-width: max-content;
+        transform: translateY(-40px);
+    }
+
+    .links_c2 {
+        position: relative;
+
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        align-self: center;
+        max-width: max-content;
+        transform: translateY(-40px);
+    }
+}
