@@ -49,6 +49,11 @@
                 DeanDark's Corner
         </a>
     </div>
+    <div class="links_c2">
+        <a href="./Projects">
+            Projects (Soon™)
+        </a>
+    </div>
 </div>
 <div class="lines">
     <div class="line"></div>
@@ -56,27 +61,6 @@
     <div class="line"></div>
 </div>
 <script src="script.js"></script>
-
-
-
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        var lines = document.querySelectorAll('.line');
-        var randomOffset = Math.floor(Math.random() * 100) + 'vw';
-        // Przesuń linię o losową wartość w poziomie
-        lines.forEach(function(line) {
-            line.style.left = randomOffset;
-        });
-        // Po zakończeniu animacji przesuń linię o losową wartość w poziomie
-        lines.forEach(function(line) {
-            line.addEventListener('animationiteration', function() {
-                // Po zakończeniu animacji przesuń linię o losową wartość w poziomie
-                var randomOffset = Math.floor(Math.random() * 100) + 'vw';
-                line.style.left = randomOffset;
-            });
-        });
-    });
-</script>
 
 </body>
 </html>

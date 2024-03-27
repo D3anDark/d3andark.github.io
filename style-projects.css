@@ -72,7 +72,7 @@ body, html {
 }
 
 h1 {
-    font: 700 95px/100% var(--font-family);
+    font: 700 128px/100% var(--font-family);
     text-align: center;
     color: #FFFFFFD6;
     text-shadow: 0 0 10px #ffffff;
@@ -86,7 +86,7 @@ h1 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 24px;
+    gap: 50px;
 }
 
 .links {
