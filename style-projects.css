@@ -35,7 +35,6 @@ h1 {
 }
 
 .links {
-    /*position: relative;*/
     z-index: 1;
 
     display: flex;
@@ -152,7 +151,7 @@ a:visited {
     transform: rotate(-45deg);
 }
 
-.line::after {
+.line:after {
     content: "";
     display: block;
     position: absolute;
