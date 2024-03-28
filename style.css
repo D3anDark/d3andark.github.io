@@ -34,6 +34,14 @@ h1 {
     gap: 24px;
 }
 
+/*Space*/
+
+#message{
+    font: 700 36px/100% var(--font-family);
+    text-align: center;
+    color: #FFFFFFD6;
+    text-shadow: 0 0 10px #ffffff;
+}
 .links {
     /*position: relative;*/
     z-index: 1;
@@ -242,6 +250,9 @@ a:visited {
     }
 }
 @media (width <= 660px) {
+    #message{
+        margin: 20px;
+    }
 
     .links {
         flex-direction: column;
