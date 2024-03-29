@@ -347,11 +347,5 @@ main{
         .back {
             visibility: hidden;
         }
-
-        .back:hover {
-            box-shadow: 0 0 15px #8006da;
-            text-shadow: 0 0 15px #8006da;
-            transform: scale(1.05) translateY(-80px);
-        }
     }
 }
