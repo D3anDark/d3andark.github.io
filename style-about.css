@@ -345,15 +345,7 @@ main{
         }
 
         .back {
-            z-index: 1;
-
-            padding: 8px;
-            margin: 0 auto;
-            max-width: 90%;
-            min-width: auto;
-
-            font-size: 14px;
-            transform: translateY(8000px);
+            visibility: hidden;
         }
 
         .back:hover {
