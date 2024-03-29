@@ -1,5 +1,5 @@
 const infoElement = document.querySelector('.info');
-const languageSwitchParagraph = document.querySelector('.languageSwitch p');
+const languageSwitchParagraph = document.querySelector('.languageSwitch button');
 let languageSwitch = false;
 
 let originalText = infoElement.innerHTML;
