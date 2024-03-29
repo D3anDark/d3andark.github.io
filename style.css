@@ -43,6 +43,7 @@ p {
 
 #message{
     font: 700 36px/100% var(--font-family);
+    pointer-events: none;
 }
 
 .links, .links_c2{

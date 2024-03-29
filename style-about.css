@@ -277,6 +277,8 @@ main{
     @media screen and (max-width: 360px) {
         body {
             font-size: 16px;
+
+            overflow-y: auto;
         }
 
         h1 {
@@ -354,7 +356,7 @@ main{
             transform: translateY(8000px);
         }
 
-            .back:hover {
+        .back:hover {
             box-shadow: 0 0 15px #8006da;
             text-shadow: 0 0 15px #8006da;
             transform: scale(1.05) translateY(-80px);
