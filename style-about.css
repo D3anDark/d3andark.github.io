@@ -5,6 +5,7 @@ body, html {
     background-color: #181a1b;
     width: 100vw;
     height: 100vh;
+    min-height: 100vh;
 
     font-family: system-ui, -apple-system, var(--font-family), Roboto, sans-serif;
     font-style: normal;
@@ -13,10 +14,6 @@ body, html {
     scroll-behavior: smooth;
     position: relative;
     overflow: hidden;
-}
-
-body, html {
-    min-height: 100vh;
 }
 
 a{
@@ -259,42 +256,14 @@ main{
 }
 
 /* Mobile view */
-@media screen and (max-width: 600px) {
-    body {
-        font-size: 18px;
-    }
-
-    h1 {
-        font-size: 4em;
-        height: auto;
-    }
-
-    p {
-        font-size: 1em;
-        height: auto;
-    }
-
-    @media screen and (max-width: 360px) {
+    @media (max-width: 660px) {
         body {
             font-size: 16px;
-
             overflow-y: auto;
+
+            height: max-content;
         }
 
-        h1 {
-            z-index: 500;
-
-            height: 5px;
-
-            font-size: 2.5em;
-        }
-
-        p {
-            font-size: 1em;
-        }
-    }
-
-    @media (max-width: 660px) {
         .content {
             z-index: -1;
 
@@ -315,7 +284,6 @@ main{
 
         .info {
             z-index: -1;
-
             opacity: 80%;
             flex-direction: column;
             max-height: max-content;
@@ -324,6 +292,7 @@ main{
             font-size: 0.75em;
             transform: translateY(-18%);
             box-sizing: border-box;
+            overflow-y: auto;
         }
 
         .info a{
