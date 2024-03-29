@@ -42,6 +42,10 @@ h1 {
     display: flex;
     gap: 24px;
 }
+.back a{
+    text-decoration: none;
+    color: #fff;
+}
 
 .languageSwitch{
     z-index: 2;
