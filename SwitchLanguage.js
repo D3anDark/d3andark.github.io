@@ -15,8 +15,6 @@ let polishText = "Cześć, jestem <b>DeanDark</b>, czyli Junior Developer. Uczę
     "<br>\n" +
     "Potrafię takie języki jak Polski (Ojczysty język), Angielski, oraz tak trochę Śląski i Włoski (Ten Włoski proszę brać na dystans).\n" +
     "<br>\n" +
-    "&nbsp\n" +
-    "<br>\n" +
     "A języki programowania, które umiem to HTML, CSS, Python, TypeScript, SQL i chcę się ich nauczyć więcej!\n" +
     "<br>\n" +
     "&nbsp\n" +
