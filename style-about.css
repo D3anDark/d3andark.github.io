@@ -30,6 +30,7 @@ h1 {
 
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     gap: 24px;
 }
@@ -51,6 +52,9 @@ h1 {
     z-index: 2;
 
     display: flex;
+
+    width: fit-content;
+
     justify-content: center;
     align-items: center;
     text-align: center;
