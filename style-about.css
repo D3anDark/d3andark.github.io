@@ -44,6 +44,8 @@ h1 {
     gap: 24px;
 }
 .back a{
+    text-align: center;
+
     text-decoration: none;
     color: #fff;
 }
@@ -60,7 +62,7 @@ h1 {
     text-align: center;
 }
 
-button{
+button, .button{
     z-index: 2;
 
     cursor: pointer;
@@ -81,7 +83,7 @@ button{
     transition: background-color 0.5s ease, transform 0.4s ease, border-color 0.8s ease;
 }
 
-button:hover{
+button:hover, .button:hover{
     background-color: #111;
     box-shadow: 0 0 20px #8006da;
     text-shadow: 0 0 20px #8006da;
@@ -89,7 +91,7 @@ button:hover{
     border-color: #8006da;
 }
 
-button:active{
+button:active, .button:active{
     transform: scale(0.9);
 }
 
