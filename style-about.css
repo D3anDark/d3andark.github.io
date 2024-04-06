@@ -4,7 +4,7 @@ body, html {
 
     background-color: #181a1b;
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
     min-height: 100vh;
 
     font-family: var(--font-family), system-ui, -apple-system, Roboto, sans-serif;
@@ -149,7 +149,7 @@ button:active, .button:active{
     transform: rotate(-45deg);
 }
 
-.line:after {
+.line::after {
     content: "";
     display: block;
     position: absolute;
@@ -205,8 +205,6 @@ button:active, .button:active{
         font-size: 12px;
     }
     .content {
-        height: 100dvh;
-
         flex-direction: column;
         gap: 16px;
     }
