@@ -1,0 +1,51 @@
+body,html{
+    margin: 0;
+    padding: 0;
+
+    height: 100dvh;
+    width: 100dvw;
+
+    background: var(--bg);
+
+    font-family: var(--font-family);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    gap: 100px;
+}
+
+.error{
+    text-align: center;
+    color: #fff;
+
+    font-size: 2rem;
+
+    background: #666;
+
+    padding: 20px 40px;
+    border-radius: 16px;
+}
+
+.error #information{
+    font-size: 1.5rem;
+}
+
+svg{
+    width: 250px;
+    height: 250px;
+
+
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
