@@ -203,6 +203,9 @@ button:active, .button:active{
 @media (max-width: 768px) {
     body{
         font-size: 12px;
+
+        height: 100dvh;
+        width: 100dvw;
     }
     .content {
         flex-direction: column;

@@ -172,6 +172,10 @@ a:hover {
 
 /*Mobile view*/
 @media (width <= 660px) {
+    body{
+        height: 100dvh;
+        width: 100dvw;
+    }
     h1 {
         font-size: 3.5em;
         height: 30vh;
