@@ -17,6 +17,8 @@ body,html{
     align-items: center;
     height: 100vh;
 
+    padding: 20px;
+
     gap: 100px;
 }
 
@@ -47,5 +49,19 @@ svg{
 @keyframes rotate {
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 768px){
+    body{
+        height: 100dvh;
+        width: 100dvw;
+    }
+    .error{
+        font-size: 1.5rem;
+    }
+
+    #information{
+        font-size: 1rem;
     }
 }
