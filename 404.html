@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>404 error</title>
+	<link rel="stylesheet" href="src/css/global.css">
+
+	<link rel="icon" href="https://cdn.deandark.me/LogoWhite.svg" type="image/x-icon">
+</head>
+<style>
+	body,html{
+
+		margin: 0;
+		padding: 0;
+
+		height: 100dvh;
+		width: 100dvw;
+
+        background: var(--bg);
+
+        font-family: var(--font-family);
+	}
+
+	.container{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+
+		gap: 100px;
+	}
+
+	.error{
+		text-align: center;
+		color: #fff;
+
+		font-size: 2rem;
+
+		background: #666;
+
+		padding: 20px 40px;
+		border-radius: 16px;
+	}
+
+	.error #information{
+		font-size: 1.5rem;
+	}
+
+	svg{
+		width: 250px;
+		height: 250px;
+
+
+		animation: rotate 10s linear infinite;
+	}
+
+	@keyframes rotate {
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+</style>
+<body onclick="window.location='https://deandark.me/'">
+	<div class="container">
+		<svg width="1088" height="1088" viewBox="0 0 1088 1088" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<g filter="url(#filter0_d_2_6)">
+				<circle cx="544" cy="540" r="490" stroke="white" stroke-width="100" shape-rendering="crispEdges"/>
+			</g>
+			<path d="M706.5 540C706.5 629.746 633.746 702.5 544 702.5C454.254 702.5 381.5 629.746 381.5 540C381.5 450.254 454.254 377.5 544 377.5C633.746 377.5 706.5 450.254 706.5 540Z" stroke="white" stroke-width="75"/>
+			<path d="M99 340C157.477 393.142 199.895 438.19 278.156 411.677C300.226 404.2 325.411 407.898 340.805 425.392L380.5 470.5" stroke="white" stroke-width="90" stroke-linecap="round"/>
+			<path d="M979.5 339C921.023 392.142 878.605 437.19 800.344 410.677C778.274 403.2 753.089 406.898 737.695 424.392L698 469.5" stroke="white" stroke-width="90" stroke-linecap="round"/>
+			<path d="M204.533 192.732C291.227 303.131 364.723 288.367 390.634 267.185" stroke="white" stroke-width="90" stroke-linecap="round"/>
+			<path d="M888.211 193C801.517 303.398 728.021 288.634 702.11 267.453" stroke="white" stroke-width="90" stroke-linecap="round"/>
+			<path d="M456 350L486 380" stroke="white" stroke-width="90" stroke-linecap="round"/>
+			<path d="M632 350L602 380" stroke="white" stroke-width="90" stroke-linecap="round"/>
+			<path d="M947 816.231C609.163 738.437 608.957 903.663 651.084 996" stroke="white" stroke-width="90" stroke-linecap="round"/>
+			<path d="M137.735 763.232C483.949 745.285 455.46 908.036 397.939 991.655" stroke="white" stroke-width="90" stroke-linecap="round"/>
+			<path d="M121 737C350.576 654.207 389.141 615.836 379.727 607" stroke="white" stroke-width="90" stroke-linecap="round"/>
+			<path d="M963 743C733.424 660.207 694.859 621.836 704.273 613" stroke="white" stroke-width="90" stroke-linecap="round"/>
+			<path d="M481.032 445H547.282C582.782 445 616.032 463 616.032 504.25V563.75C616.032 604.5 582.782 622.25 547.282 622H481.032V445ZM526.032 580H548.782C564.032 580 571.032 572.25 571.032 560.75V505.5C571.032 494 563.782 486.75 548.782 486.75H526.032V580Z" fill="white"/>
+			<defs>
+				<filter id="filter0_d_2_6" x="0" y="0" width="1088" height="1088" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+					<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+					<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+					<feOffset dy="4"/>
+					<feGaussianBlur stdDeviation="2"/>
+					<feComposite in2="hardAlpha" operator="out"/>
+					<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+					<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_6"/>
+					<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_6" result="shape"/>
+				</filter>
+			</defs>
+		</svg>
+
+		<div class="error">
+			<h1>404</h1>
+			<p>Page not found</p>
+			<p id="information">
+				Click anywhere to go back
+			</p>
+		</div>
+	</div>
+</body>
+</html>
