@@ -2,8 +2,8 @@ body,html{
     margin: 0;
     padding: 0;
 
-    height: 100dvh;
-    width: 100dvw;
+    height: 100svh;
+    width: 100svw;
 
     background: var(--bg);
 
@@ -15,7 +15,7 @@ body,html{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100svh;
 
     padding: 20px;
 
@@ -54,8 +54,8 @@ svg{
 
 @media (max-width: 768px){
     body{
-        height: 100dvh;
-        width: 100dvw;
+        height: 100svh;
+        width: 100svw;
     }
     .error{
         font-size: 1.5rem;

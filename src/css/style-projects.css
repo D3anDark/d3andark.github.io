@@ -3,9 +3,9 @@ body, html {
     padding: 0;
 
     background-color: #181a1b;
-    width: 100vw;
+    width: 100svw;
     height: 100%;
-    min-height: 100vh;
+    min-height: 100svh;
 
     font-family: system-ui, -apple-system, var(--font-family), Roboto, sans-serif;
     font-style: normal;
@@ -211,8 +211,8 @@ a:visited {
     body {
         font-size: 18px;
 
-        height: 100dvh;
-        width: 100dvw;
+        height: 100svh;
+        width: 100svw;
     }
 
     h1 {
