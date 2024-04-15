@@ -219,8 +219,6 @@ button:active, .button:active{
     .content {
         flex-direction: column;
 
-        max-height: 100svh;
-
         gap: 12px;
 
         transform: translateY(-30px);
@@ -239,13 +237,11 @@ button:active, .button:active{
 
     .info {
         width: 85svw;
-        height: fit-content;
     }
 }
 
 @media (min-width: 425px) {
     .info {
         width: 85svw;
-        height: fit-content;
     }
 }
