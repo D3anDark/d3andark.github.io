@@ -3,7 +3,7 @@ body, html {
     padding: 0;
 
     background-color: #181a1b;
-    width: 100vw;
+    width: 100svw;
     height: 100svh;
     min-height: 100svh;
 
@@ -212,15 +212,9 @@ button:active, .button:active{
 @media (max-width: 768px) {
     body{
         font-size: 12px;
-
-        width: 100svw;
     }
 
     .content {
-        flex-direction: column;
-
-        gap: 12px;
-
         transform: translateY(-30px);
     }
     h1 {
