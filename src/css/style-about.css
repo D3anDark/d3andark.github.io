@@ -115,6 +115,9 @@ button:active, .button:active{
     z-index: 2;
 
     width: 85vh;
+
+    margin: auto;
+
     height: max-content;
 
     text-align: left;
@@ -228,6 +231,33 @@ button:active, .button:active{
 
     .back .button {
         visibility: hidden;
+    }
+
+    .about_content {
+        padding-bottom: 150px;
+    }
+
+    .info {
+        width: 85svw;
+        height: fit-content;
+    }
+}
+
+@media (min-width: 425px) {
+    body{
+        font-size: 14px;
+    }
+
+    .content {
+        flex-direction: column;
+
+        max-height: 100svh;
+
+        gap: 12px;
+
+    }
+    h1 {
+        font: 700 50px/100% var(--font-family);
     }
 
     .about_content {
