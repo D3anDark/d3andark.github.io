@@ -256,9 +256,6 @@ button:active, .button:active{
         gap: 12px;
 
     }
-    h1 {
-        font: 700 50px/100% var(--font-family);
-    }
 
     .about_content {
         padding-bottom: 150px;
