@@ -5,7 +5,7 @@ body, html {
     background-color: #181a1b;
     width: 100vw;
     height: 100dvh;
-    min-height: 100vh;
+    min-height: 100dvh;
 
     font-family: var(--font-family), system-ui, -apple-system, Roboto, sans-serif;
     font-style: normal;
@@ -199,8 +199,8 @@ button:active, .button:active{
     position: absolute;
     top: 0;
 
-    height: 100vh;
-    width: 100vw;
+    height: 100dvh;
+    width: 100dvw;
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -210,7 +210,7 @@ button:active, .button:active{
     body{
         font-size: 12px;
 
-        height: 100dvh;
+        max-height: 100dvh;
         width: 100dvw;
     }
 
