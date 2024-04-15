@@ -16,23 +16,10 @@ body, html {
     overflow: hidden;
 }
 
-h1 {
-    font: 700 95px/100% var(--font-family);
-    text-align: center;
-    color: #FFFFFFD6;
-    text-shadow: 0 0 10px #ffffff;
-}
-
 .content {
     z-index: 2;
 
     height: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 24px;
 }
 
 .back{
@@ -48,6 +35,25 @@ h1 {
 
     text-decoration: none;
     color: #fff;
+}
+
+main{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 100%;
+
+    gap: 24px;
+}
+
+h1 {
+    font: 700 95px/100% var(--font-family);
+    text-align: center;
+    color: #FFFFFFD6;
+    text-shadow: 0 0 10px #ffffff;
 }
 
 .languageSwitch{
@@ -207,6 +213,7 @@ button:active, .button:active{
         height: 100dvh;
         width: 100dvw;
     }
+
     .content {
         flex-direction: column;
         gap: 16px;
@@ -215,7 +222,7 @@ button:active, .button:active{
         font: 700 50px/100% var(--font-family);
     }
 
-    .back button {
+    .back .button {
         min-width: 100px;
     }
 
@@ -224,6 +231,6 @@ button:active, .button:active{
     }
 
     .info {
-        width: 85vw;
+        width: 85dvw;
     }
 }
