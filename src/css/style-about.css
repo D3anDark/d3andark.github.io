@@ -219,6 +219,8 @@ button:active, .button:active{
         max-height: 100svh;
 
         gap: 12px;
+
+        transform: translateY(-30px);
     }
     h1 {
         font: 700 50px/100% var(--font-family);
