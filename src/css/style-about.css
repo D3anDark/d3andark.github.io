@@ -104,6 +104,8 @@ button:active, .button:active{
 .about_content{
     z-index: 2;
 
+    width: 85vh;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,8 +115,6 @@ button:active, .button:active{
 
 .info{
     z-index: 2;
-
-    width: 85vh;
 
     margin: auto;
 
