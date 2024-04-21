@@ -1,6 +1,11 @@
-:root {
-    --font-family: 'Clash Display', sans-serif;
-    --bg: #181a1b;
+:root{
+    --text: #e0edef;
+    --background: #091314;
+    --primary: #96d2da;
+    --secondary: #226e77;
+    --accent: #3fc3d4;
+
+    --font-family: 'Clash Grotesk', sans-serif;
 }
 
 * {
@@ -12,44 +17,28 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    -webkit-user-drag: none; /* Undragable */
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
+    scroll-behavior: smooth;
+    scrollbar-color: var(--primary) var(--secondary);
+    scrollbar-width: thin;
 }
 
-@font-face {
-    font-family: "Clash Display";
-    src: url("./fonts/ClashDisplay-Extralight.otf");
-    font-weight: 200;
+::selection {
+    background-color: var(--primary);
+    color: var(--secondary);
 }
 
-@font-face {
-    font-family: "Clash Display";
-    src: url("./fonts/ClashDisplay-Light.otf");
-    font-weight: 300;
+.spoiler {
+    filter: blur(20px);
+
+    user-select: none;
+
+    transition: 0.5s;
 }
 
-@font-face {
-    font-family: "Clash Display";
-    src: url("./fonts/ClashDisplay-Regular.otf");
-    font-weight: 400;
-}
+.spoiler:hover {
+    filter: blur(0);
 
-@font-face {
-    font-family: "Clash Display";
-    src: url("./fonts/ClashDisplay-Medium.otf");
-    font-weight: 500;
-}
+    user-select: auto;
 
-@font-face {
-    font-family: "Clash Display";
-    src: url("./fonts/ClashDisplay-Semibold.otf");
-    font-weight: 600;
-}
-
-@font-face {
-    font-family: "Clash Display";
-    src: url("./fonts/ClashDisplay-Bold.otf");
-    font-weight: 700;
+    transition: 0.5s;
 }
