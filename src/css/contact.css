@@ -34,6 +34,9 @@
     color: var(--text);
 
     width: 50svw;
+
+    transition: all 0.5s;
+
 }
 
 #contact-content a{
