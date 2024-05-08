@@ -1,0 +1,85 @@
+@media (max-width: 768px){
+    header{
+        width: 90%;
+    }
+
+    #introduce{
+        width: 100%;
+        height: 100svh;
+    }
+
+    #about-content{
+        width: 90%;
+    }
+
+    .screen{
+        position: relative;
+        height: 60%;
+    }
+
+    .screen .s-communicat{
+        width: 100%;
+        max-width: fit-content;
+    }
+
+    .screen h1{
+        font-size: 2rem;
+    }
+
+    .screen p{
+        font-size: 1rem;
+    }
+
+    #about{
+    }
+
+    #about h2{
+        font-size: 3rem;
+
+        margin-top: 130px;
+    }
+
+    #about-content{
+        width: 90%;
+    }
+
+    .bigger-text{
+        font-size: 1.25rem !important;
+    }
+
+    #about-content p, #about-content a{
+        font-size: 1rem;
+    }
+
+    #projects h3{
+        font-size: 3rem;
+
+        margin-top: 130px;
+    }
+
+    .project{
+        width: 90%;
+
+        margin-top: 0;
+    }
+
+    #projects-content{
+        margin-top: 20px;
+    }
+
+    #projects-content iframe{
+        display: none;
+    }
+
+    #contact-content p{
+        width: 90svw;
+    }
+
+    #mail svg, #discord svg, #telegram svg{
+        display: none;
+    }
+
+    #discord::before, #mail::before, #telegram::before{
+        display: none;
+    }
+}

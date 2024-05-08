@@ -5,9 +5,9 @@ body,html{
     height: 100svh;
     width: 100svw;
 
-    background: var(--bg);
+    background: var(--background);
 
-    font-family: var(--font-family);
+    font: normal 16px var(--font-family);
 }
 
 .container{

@@ -22,52 +22,175 @@
     <title>DeanDark</title>
 
     <meta name="darkreader-lock">
-    <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" href="src/css/global.css">
-    <link rel="stylesheet" href="src/css/background.css">
 
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <link rel="shortcut icon" href="https://cdn.deandark.me/DeanDarkOdznaka.png" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/text-style.css">
+    <link rel="stylesheet" href="src/css/fonts.css">
+    <link rel="stylesheet" href="src/css/global.css">
+    <link rel="stylesheet" href="src/css/header.css">
+    <link rel="stylesheet" href="src/css/dropdown.css">
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/about.css">
+    <link rel="stylesheet" href="src/css/projects.css">
+    <link rel="stylesheet" href="src/css/contact.css">
+    <link rel="stylesheet" href="src/css/footer.css">
+    <link rel="stylesheet" href="src/css/mobile-view.css">
+
+    <link rel="shortcut icon" href="https://cdn.deandark.me/logo.png" type="image/x-icon">
 </head>
 <body>
-<div id="particles-js"></div>
+
 <div class="content">
+    <header>
+        <div class="h-left">
+            <a href="#">
+                <img src="https://cdn.deandark.me/logo.png" alt="DeanDark's Logo">
+            </a>
+        </div>
+        <div class="h-center">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="h-right">
+            <div class="dropdown">
+                <button class="dropdown-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
     <main>
-        <h1>
-           <b> DeanDark </b>
-        </h1>
-        <p>
-            <b>Designer, Junior Developer, Programmer, and more!</b>
-            <br>
-            I will make rewrite of this site soon™
-        </p>
+        <section id="introduce">
+            <div class="screen">
+                <div class="s-communicat">
+                    <p>
+                        Sorry, We're having trouble with connection.
+                    </p>
+                </div>
+
+                <span class="old-tv-effect">
+                    <h1>DeanDark</h1>
+                    <p>Welcome on DeanDark's WebSite!</p>
+                    <p>Here you can find all of my projects, learn more about me and contact me.</p>
+                </span>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About</h2>
+            <div id="about-content">
+                <p class="fw600 bigger-text">
+                    Hi, I'm DeanDark, interested in a lot of things.
+                </p>
+
+                <p>
+                    For example, I really like astrophysics, geopolitics, and programming. I learned to program when I was about 10 years old. And I know HTML, CSS, Python, C#, and SQL.
+                </p>
+
+                <p>
+                    For a while now, I've also been learning JavaScript and React, but I don't feel too learned in them yet. Especially because I don't have a lot of ideas on how to learn them, because I don't know what to do in them.
+                </p>
+
+                <p>
+                    I'm very fond of music, and I plan to learn to play a few instruments. For example, such as piano or guitar, and a few others.
+                </p>
+
+                <p>
+                    And I like to play computer games, but lately I neither have the desire nor the time. And such games that I mainly play are: Stardew Valley, Euro Truck Simulator 2, Overwatch 2, Minecraft etc.
+                </p>
+
+                <p>
+                    I try to learn as much as possible of the things I like, but I don't like to force myself to do this learning. For me, to learn something well, there is a desire to learn it. In the same way, something must not be done by force. And I really like to help others, so I try my best to fulfill my duties to help on the server support <a href=“https://startit.bot/” target=“_blank”>Discord Bot StartIT</a>.
+                </p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h3>Projects</h3>
+            <p class="fw600 bigger-text">
+                Here are some of my projects.
+            </p>
+            <div id="projects-content">
+
+                <p class="project">
+                    <iframe src="https://pretty-design.vercel.app" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                    <a href="https://pretty-design.vercel.app" target="_blank">Pretty Design</a> - A website with free to use design.
+                </p>
+
+                <p class="project">
+                    <iframe src="https://netykieta.vercel.app" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                    <a href="https://etykieta.vercel.app" target="_blank">Netykieta</a> - A website with rules for the internet in Polish.
+                </p>
+
+                <p class="project">
+                    <iframe src="https://deandark.me/working" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                    <a href="https://deandark.me/working" target="_blank">My Working Site</a> - A website with text that im working at this website.
+                </p>
+
+                <p class="project">
+                    <iframe src="https://vexservice.pro" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                    <a href="https://vexservice.pro/" target="_blank">VexService</a> - A website for a small IoT polish service.
+                </p>
+
+            </div>
+        </section>
+
+        <section id="contact">
+            <h4>Contact</h4>
+            <p class="fw600 bigger-text">
+                You can contact me by:
+            </p>
+            <div id="contact-content">
+                <p id="discord">
+                    <svg aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M19.73 4.87a18.2 18.2 0 0 0-4.6-1.44c-.21.4-.4.8-.58 1.21-1.69-.25-3.4-.25-5.1 0-.18-.41-.37-.82-.59-1.2-1.6.27-3.14.75-4.6 1.43A19.04 19.04 0 0 0 .96 17.7a18.43 18.43 0 0 0 5.63 2.87c.46-.62.86-1.28 1.2-1.98-.65-.25-1.29-.55-1.9-.92.17-.12.32-.24.47-.37 3.58 1.7 7.7 1.7 11.28 0l.46.37c-.6.36-1.25.67-1.9.92.35.7.75 1.35 1.2 1.98 2.03-.63 3.94-1.6 5.64-2.87.47-4.87-.78-9.09-3.3-12.83ZM8.3 15.12c-1.1 0-2-1.02-2-2.27 0-1.24.88-2.26 2-2.26s2.02 1.02 2 2.26c0 1.25-.89 2.27-2 2.27Zm7.4 0c-1.1 0-2-1.02-2-2.27 0-1.24.88-2.26 2-2.26s2.02 1.02 2 2.26c0 1.25-.88 2.27-2 2.27Z" class="">
+
+                        </path>
+                    </svg>
+
+                    <a href="https://discord.com/users/328161853211541506">@deandark</a>
+                </p>
+                <p id="mail">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+
+                    <a href="mailto:contact@deandark.me"> contact@deandark.me </a>
+                </p>
+
+                <p id="telegram">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.24253 15.8312C11.9069 13.799 15.0171 12.4593 16.5734 11.812C21.0167 9.96384 21.94 9.64279 22.5418 9.63219C22.6742 9.62986 22.9701 9.66266 23.1618 9.81821C23.3237 9.94956 23.3682 10.127 23.3895 10.2515C23.4109 10.376 23.4374 10.6597 23.4163 10.8814C23.1755 13.4114 22.1336 19.5509 21.6036 22.3846C21.3793 23.5836 20.9377 23.9856 20.5101 24.0249C19.581 24.1104 18.8754 23.4109 17.9755 22.821C16.5673 21.8979 15.7717 21.3232 14.4048 20.4225C12.8251 19.3815 13.8492 18.8093 14.7494 17.8743C14.985 17.6296 19.0789 13.9059 19.1581 13.5681C19.168 13.5258 19.1772 13.3684 19.0837 13.2852C18.9901 13.2021 18.8521 13.2305 18.7524 13.2531C18.6112 13.2852 16.3615 14.7721 12.0035 17.7139C11.365 18.1523 10.7866 18.366 10.2684 18.3548C9.69711 18.3424 8.59819 18.0318 7.78125 17.7662C6.77925 17.4405 5.98288 17.2683 6.05223 16.7152C6.08835 16.427 6.48512 16.1324 7.24253 15.8312Z">
+                    </path>
+                    </svg>
+                    <a href="https://t.me/D3anDark">@D3anDark</a>
+                </p>
+            </div>
+        </section>
     </main>
 
-    <div class="links">
-        <a href="./about">
-            About me
-        </a>
-
-        <a href="https://github.com/d3andark" target="_blank">
-                GitHub
-        </a>
-
-        <a href="https://deandark.me/contact">
-                Contact
-        </a>
-    </div>
-    <div class="links_c2">
-        <a href="https://deandark.me/working/">
-            Projects (temp)
-        </a>
-    </div>
+    <footer>
+        <p>
+            Made with ❤️ by DeanDark in Poland 🇵🇱
+        </p>
+    </footer>
 </div>
-<div class="lines">
-    <div class="line"></div>
-    <div class="line"></div>
-    <div class="line"></div>
-</div>
-<script src="src/js/script.js"></script>
 
 </body>
 </html>
