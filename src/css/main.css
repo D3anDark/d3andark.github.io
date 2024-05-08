@@ -87,6 +87,10 @@ main{
     background: rgba(var(--rgba-primary), 0.2);
 }
 
+.screen .s-communicat p{
+    opacity: 1;
+}
+
 .screen::after{
     content: 'TV';
 
@@ -109,12 +113,15 @@ main{
 }
 
 .screen h1{
+    opacity: 0.3;
 
     font: 700 5rem var(--font-family);
     color: var(--text);
 }
 
 .screen p{
+    opacity: 0.3;
+
     font: 400 1.5rem var(--font-family);
     color: var(--text);
 }
