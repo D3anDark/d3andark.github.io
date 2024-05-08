@@ -61,7 +61,3 @@ body, html {
     justify-content: center;
     align-items: center;
 }
-
-deepl-input-controller, deepl-inline-trigger{
-    opacity: 0;
-}

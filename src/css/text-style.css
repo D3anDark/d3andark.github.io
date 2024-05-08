@@ -107,17 +107,3 @@ a, a:visited {
 .bigger-text{
     font-size: 3rem !important;
 }
-
-.old-tv-effect {
-    background:
-            repeating-radial-gradient(#000 0 0.0001%,var(--text) 0 0.0002%) 50% 0/1750px 1750px,
-            repeating-conic-gradient(#000 0 0.0001%,var(--text) 0 0.0002%) 60% 60%/1750px 1750px;
-    background-blend-mode: difference;
-    animation: b .3s infinite alternate;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-@keyframes b{
-    100% {background-position: 50% 0, 60% 50%}
-}
