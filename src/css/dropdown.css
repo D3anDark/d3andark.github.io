@@ -15,6 +15,12 @@
     transition: all 0.4s;
 }
 
+.dropdown-button.active {
+    border-radius: 10px 10px 0 0;
+
+    transition: all 0.4s;
+}
+
 .dropdown-button svg{
     width: 1.5rem;
     height: 1.5rem;
@@ -22,10 +28,6 @@
 
 .dropdown {
     position: relative;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
 }
 
 .dropdown-content {
@@ -37,6 +39,8 @@
 
     border: 1px solid var(--primary);
 
+    opacity: 0;
+
     min-width: 250px;
 
     box-shadow: 0 8px 16px 0 rgba(var(--rgba-accent) 0.2);
@@ -44,6 +48,12 @@
 
     animation: slideIn 0.5s;
     transition: all 0.5s;
+}
+
+.dropdown-content.visible {
+    display: block;
+
+    opacity: 1;
 }
 
 @keyframes slideIn {
