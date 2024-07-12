@@ -75,11 +75,11 @@
         width: 90svw;
     }
 
-    #mail svg, #discord svg, #telegram svg{
+    #server svg, #mail svg, #discord svg, #telegram svg{
         display: none;
     }
 
-    #discord::before, #mail::before, #telegram::before{
+    #server::before, #discord::before, #mail::before, #telegram::before{
         display: none;
     }
 }

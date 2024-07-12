@@ -6,5 +6,3 @@ function toggleDropdown() {
     dropdown.classList.toggle('visible');
     dropdownButton.classList.toggle('active');
 }
-
-

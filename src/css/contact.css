@@ -46,7 +46,7 @@
     transition: all 0.5s;
 }
 
-#discord, #mail, #telegram{
+#server, #discord, #mail, #telegram{
     position: relative;
     display: flex;
     flex-direction: column;
@@ -63,7 +63,7 @@
 }
 
 
-#discord:hover a, #mail:hover a, #telegram:hover a{
+#server:hover, #discord:hover a, #mail:hover a, #telegram:hover a{
     color: var(--accent);
 
     transform: scale(1.1);
@@ -71,7 +71,7 @@
     transition: all 0.5s;
 }
 
-#discord a::after, #mail a::after, #telegram a::after{
+#server a::after, #discord a::after, #mail a::after, #telegram a::after{
     content: '';
     display: block;
     width: 0;
@@ -82,7 +82,7 @@
     transition: all 0.5s;
 }
 
-#discord:hover a::after, #mail:hover a::after, #telegram:hover a::after{
+#server:hover a::after, #discord:hover a::after, #mail:hover a::after, #telegram:hover a::after{
     width: 100%;
 
     transition: all 0.5s;
@@ -97,7 +97,7 @@
     height: 50px;
 }
 
-#telegram svg, #discord svg{
+#server svg, #telegram svg, #discord svg{
     position: absolute;
 
     left: 20px;
@@ -108,7 +108,7 @@
     fill: var(--text);
 }
 
-#discord:hover, #mail:hover, #telegram:hover{
+#server:hover, #discord:hover, #mail:hover, #telegram:hover{
     background: rgba(var(--rgba-secondary), 0.2);
 
     border: 2px solid rgba(var(--rgba-primary), .5);
@@ -122,6 +122,14 @@
 /*Discord text*/
 #discord::before{
     content: 'Discord';
+    color: var(--text);
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#server::before{
+    content: 'Server Discord';
     color: var(--text);
     display: block;
     font-size: 1.5rem;
