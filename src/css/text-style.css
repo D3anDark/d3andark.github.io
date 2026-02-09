@@ -1,0 +1,109 @@
+::selection {
+    background-color: var(--primary);
+    color: var(--secondary);
+    -webkit-text-fill-color: var(--secondary);
+}
+
+span,a,p,h1,h2,h3,h4,h5,h6 {
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+}
+
+a, a:visited {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.ff {
+    font: inherit var(--font-family);
+}
+
+.fw700 {
+    font-weight: 700 !important;
+}
+
+.fw600 {
+    font-weight: 600 !important;
+}
+
+.fw500 {
+    font-weight: 500 !important;
+}
+
+.fw400 {
+    font-weight: 400 !important;
+}
+
+.fw300 {
+    font-weight: 300 !important;
+}
+
+.fw200 {
+    font-weight: 200 !important;
+}
+
+.fw100 {
+    font-weight: 100 !important;
+}
+
+.spoiler {
+    filter: blur(5px);
+    transition: all 0.5s;
+
+    user-select: none;
+
+    cursor: help;
+}
+
+.spoiler:hover {
+    filter: blur(0);
+
+    user-select: all;
+
+    transition: all 0.5s;
+}
+
+.spoiler::after {
+    content: attr(data-spoiler);
+    color: transparent;
+    background-color: currentColor;
+    transition: all 0.5s;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+.underline-text {
+    text-decoration: underline;
+}
+
+.comment {
+    color: var(--text);
+    opacity: 0.6;
+
+    font-style: italic;
+}
+
+.comment::before {
+    content: '/* ';
+}
+
+.comment::after {
+    content: ' */';
+}
+
+.gradient {
+    background: linear-gradient(to right, var(--primary), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient::selection {
+    -webkit-text-fill-color: var(--secondary);
+}
+
+.bigger-text{
+    font-size: 3rem !important;
+}

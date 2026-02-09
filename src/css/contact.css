@@ -1,0 +1,154 @@
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    min-height: 100svh;
+    max-height: fit-content;
+
+    gap: 20px;
+}
+
+#contact h4{
+    font: 700 5rem var(--font-family);
+    color: var(--text);
+}
+
+#contact-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 70%;
+
+    margin-top: 10svh;
+
+    gap: 20px;
+}
+
+#contact-content p{
+    font: 300 1.5rem var(--font-family);
+    color: var(--text);
+
+    width: 50svw;
+
+    transition: all 0.5s;
+
+}
+
+#contact-content a{
+    font: 400 1.5rem var(--font-family);
+    color: var(--text);
+
+    transition: all 0.5s;
+}
+
+#server, #discord, #mail, #telegram{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 20px;
+
+    background: rgba(var(--rgba-primary), 0.2);
+
+    border-radius: 10px;
+}
+
+
+#server:hover, #discord:hover a, #mail:hover a, #telegram:hover a{
+    color: var(--accent);
+
+    transform: scale(1.1);
+
+    transition: all 0.5s;
+}
+
+#server a::after, #discord a::after, #mail a::after, #telegram a::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+
+    background: var(--accent);
+
+    transition: all 0.5s;
+}
+
+#server:hover a::after, #discord:hover a::after, #mail:hover a::after, #telegram:hover a::after{
+    width: 100%;
+
+    transition: all 0.5s;
+}
+
+#mail svg{
+    position: absolute;
+
+    left: 20px;
+
+    width: 50px;
+    height: 50px;
+}
+
+#server svg, #telegram svg, #discord svg{
+    position: absolute;
+
+    left: 20px;
+
+    width: 50px;
+    height: 50px;
+
+    fill: var(--text);
+}
+
+#server:hover, #discord:hover, #mail:hover, #telegram:hover{
+    background: rgba(var(--rgba-secondary), 0.2);
+
+    border: 2px solid rgba(var(--rgba-primary), .5);
+
+    transform: scale(1.1);
+
+    transition: all 0.5s;
+}
+
+
+/*Discord text*/
+#discord::before{
+    content: 'Discord';
+    color: var(--text);
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#server::before{
+    content: 'Server Discord';
+    color: var(--text);
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#mail::before{
+    content: 'Email';
+    color: var(--text);
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 500;
+
+}
+
+#telegram::before{
+    content: 'Telegram';
+    color: var(--text);
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 500;
+}

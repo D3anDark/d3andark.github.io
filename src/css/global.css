@@ -1,0 +1,63 @@
+:root {
+    --text: #ece7ef;
+    --background: #0b060e;
+    --primary: #bf8de2;
+    --secondary: #59118d;
+    --accent: #ae31f6;
+
+    --rgba-text: 236, 231, 239;
+    ---rgba-background: 11, 6, 14;
+    --rgba-primary: 191, 141, 226;
+    --rgba-secondary: 89, 17, 141;
+    --rgba-accent: 174, 49, 246;
+
+    --font-family: "Clash Display", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*::selection {
+    background: var(--primary);
+    color: var(--background);
+
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+
+    background: var(--background);
+
+
+    color: var(--text);
+
+    width: 100%;
+    min-height: 100svh;
+
+    font-family: var(--font-family), system-ui, -apple-system, Roboto, sans-serif;
+    font-style: normal;
+
+    box-shadow: inset -40px 0 40px -30px rgba(var(--rgba-accent), 0.2), inset 40px 0 40px -30px rgba(var(--rgba-accent), 0.2);
+    border-radius: 15px;
+
+    scroll-behavior: smooth;
+    position: relative;
+    overflow-x: hidden;
+
+    z-index: -2000;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

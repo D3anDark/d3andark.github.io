@@ -1,0 +1,17 @@
+footer{
+    background-color: rgba(var(--rgba-primary), .2);
+
+    backdrop-filter: blur(10px);
+
+    color: var(--text);
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 10px;
+    width: fit-content;
+
+    border-radius: 10px;
+    border: 2px solid rgba(var(--rgba-primary), .5);
+
+    z-index: 100;
+}

@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "Clash Display";
+    src: url("../fonts/ClashDisplay-Extralight.otf");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Clash Display";
+    src: url("../fonts/ClashDisplay-Light.otf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Clash Display";
+    src: url("../fonts/ClashDisplay-Regular.otf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Clash Display";
+    src: url("../fonts/ClashDisplay-Medium.otf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Clash Display";
+    src: url("../fonts/ClashDisplay-Semibold.otf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Clash Display";
+    src: url("../fonts/ClashDisplay-Bold.otf");
+    font-weight: 700;
+}
