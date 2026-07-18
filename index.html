@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="DeanDark">
-    <meta name="theme-color" content="#ae31f6">
+    <meta name="theme-color" content="#0d0911">
     <meta name="description" content="DeanDark - developer from Poland and creator of Unisic, an open-source screenshot & recording tool for Linux. Projects, about and contact.">
     <meta property="og:title" content="DeanDark">
     <meta property="og:description" content="Developer from Poland. Creator of Unisic - screenshots done right on Linux.">
@@ -37,10 +37,6 @@
     <link rel="shortcut icon" href="https://cdn.deandark.me/logo.png" type="image/x-icon">
 </head>
 <body>
-
-<div class="glow glow-1"></div>
-<div class="glow glow-2"></div>
-<div class="glow glow-3"></div>
 
 <header>
     <div class="header-inner">
@@ -77,14 +73,21 @@
 <main>
     <section id="hero">
         <div>
-            <span class="kicker">Hi, I'm</span>
-            <h1>DeanDark</h1>
+            <p class="hero-eyebrow">Developer &middot; Katowice, Poland</p>
+            <div class="capture">
+                <span class="corner c-tl" aria-hidden="true"></span>
+                <span class="corner c-tr" aria-hidden="true"></span>
+                <span class="corner c-bl" aria-hidden="true"></span>
+                <span class="corner c-br" aria-hidden="true"></span>
+                <h1>DeanDark</h1>
+                <span class="capture-dim" aria-hidden="true">&hellip; &times; &hellip;</span>
+            </div>
             <p class="tagline">
-                Developer from Poland building open-source tools for Linux.
+                Building open-source tools for Linux.
                 Creator of <strong>Unisic</strong> - screenshots done right.
             </p>
             <div class="chips">
-                <span class="chip">C++ · Qt · QML</span>
+                <span class="chip">C++ &middot; Qt &middot; QML</span>
                 <span class="chip">Python</span>
                 <span class="chip">Web</span>
                 <span class="chip">Linux</span>
@@ -100,8 +103,8 @@
         <div class="hero-visual">
             <div class="window">
                 <div class="window-bar">
-                    <span></span><span></span><span></span>
-                    <em>Unisic - Editor</em>
+                    <em>unisic &mdash; editor</em>
+                    <span class="window-dots" aria-hidden="true"><span></span><span></span><span></span></span>
                 </div>
                 <img src="src/images/unisic-editor.webp" alt="Unisic post-capture editor" loading="eager">
             </div>
@@ -112,7 +115,7 @@
     </section>
 
     <section id="about" class="reveal">
-        <span class="kicker">About</span>
+        <span class="sec-label">About</span>
         <h2>A curious mind with a keyboard</h2>
         <div class="about-grid">
             <div>
@@ -142,7 +145,7 @@
                     <strong>Linux is where I live</strong>, and Fedora is my daily driver.
                 </p>
             </div>
-            <div class="fact-list">
+            <div class="fact-list stagger">
                 <div class="fact">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <circle cx="12" cy="12" r="10"></circle>
@@ -172,19 +175,19 @@
             </div>
         </div>
 
-        <div class="stats">
+        <div class="stats stagger">
             <div class="stat"><b>~10</b><span>Years old when I started coding</span></div>
             <div class="stat"><b>6+</b><span>Languages in the toolbox</span></div>
             <div class="stat"><b>1</b><span>Flagship project - Unisic</span></div>
-            <div class="stat"><b>∞</b><span>Things left to learn</span></div>
+            <div class="stat"><b>&infin;</b><span>Things left to learn</span></div>
         </div>
     </section>
 
     <section id="now" class="reveal">
-        <span class="kicker">Now</span>
+        <span class="sec-label">Now</span>
         <h2>What I'm focused on</h2>
         <p class="section-lead">A quick snapshot of where my time goes these days.</p>
-        <div class="now-grid">
+        <div class="now-grid stagger">
             <div class="now-card">
                 <div class="now-ico">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"></path></svg>
@@ -210,10 +213,10 @@
     </section>
 
     <section id="stack" class="reveal">
-        <span class="kicker">Stack</span>
+        <span class="sec-label">Stack</span>
         <h2>What I work with</h2>
         <p class="section-lead">The tools I reach for, grouped by what they're for.</p>
-        <div class="stack-grid">
+        <div class="stack-grid stagger">
             <div class="stack-group">
                 <h3>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
@@ -270,17 +273,17 @@
     </section>
 
     <section id="setup" class="reveal">
-        <span class="kicker">Setup</span>
+        <span class="sec-label">Setup</span>
         <h2>The machine</h2>
         <p class="section-lead">Where the code - and the occasional game - happens.</p>
-        <div class="setup-grid">
+        <div class="setup-grid stagger">
             <div class="spec-sheet">
                 <div class="spec-row">
                     <span class="k">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
                         OS
                     </span>
-                    <span class="v">Fedora 44 · KDE Plasma</span>
+                    <span class="v">Fedora 44 &middot; KDE Plasma</span>
                 </div>
                 <div class="spec-row">
                     <span class="k">
@@ -339,11 +342,11 @@
 
     <section id="unisic" class="reveal">
         <div class="spotlight">
-            <span class="kicker">Flagship project</span>
+            <span class="sec-label">Flagship project</span>
             <div class="unisic-head">
                 <img src="src/images/unisic.svg" alt="Unisic logo">
                 <h2>Unisic</h2>
-                <span class="badge-os">Linux · Wayland · GPLv3</span>
+                <span class="badge-os">Linux &middot; Wayland &middot; GPLv3</span>
             </div>
             <p class="tagline">
                 Most snipping tools stop at a screenshot. <em>Unisic is everything that should happen after.</em>
@@ -355,7 +358,7 @@
                 clipboard, disk, or your own upload destination with the link ready to paste.
                 Built on legitimate APIs only, with zero telemetry.
             </p>
-            <div class="features">
+            <div class="features stagger">
                 <div class="feature">
                     <b>Silent capture</b>
                     <span>No flash, no notification, no windows in the way.</span>
@@ -369,7 +372,7 @@
                     <span>Blur, pixelate, numbered steps, crop, object cutout and a growing toolbox.</span>
                 </div>
                 <div class="feature">
-                    <b>GIF · MP4 · WebM</b>
+                    <b>GIF &middot; MP4 &middot; WebM</b>
                     <span>Record the same region as video, powered by PipeWire.</span>
                 </div>
                 <div class="feature">
@@ -393,7 +396,7 @@
             </div>
 
             <p class="tech-line">
-                Built with <code>C++20 · Qt 6 · QML</code> on legitimate Wayland APIs -
+                Built with <code>C++20 &middot; Qt 6 &middot; QML</code> on legitimate Wayland APIs -
                 xdg-desktop-portal, KWin ScreenShot2, PipeWire.
             </p>
             <div class="buttons">
@@ -404,28 +407,28 @@
                 <a class="btn btn-ghost" href="https://github.com/unisic/unisic" target="_blank" rel="noopener">Source on GitHub</a>
             </div>
 
-            <div class="gallery">
-                <figure>
+            <div class="gallery stagger">
+                <figure class="mark">
                     <img src="src/images/unisic-capture.webp" alt="Unisic capture overlay" loading="lazy">
                     <figcaption><b>Capture</b> - annotate before the shot</figcaption>
                 </figure>
-                <figure>
+                <figure class="mark">
                     <img src="src/images/unisic-record.webp" alt="Unisic recording" loading="lazy">
                     <figcaption><b>Record</b> - GIF, MP4 or WebM</figcaption>
                 </figure>
-                <figure>
+                <figure class="mark">
                     <img src="src/images/unisic-destinations.webp" alt="Unisic destinations" loading="lazy">
                     <figcaption><b>Destinations</b> - send it anywhere</figcaption>
                 </figure>
-                <figure>
+                <figure class="mark">
                     <img src="src/images/unisic-history.webp" alt="Unisic history" loading="lazy">
                     <figcaption><b>History</b> - every capture, one click away</figcaption>
                 </figure>
-                <figure>
+                <figure class="mark">
                     <img src="src/images/unisic-settings.webp" alt="Unisic settings" loading="lazy">
                     <figcaption><b>Settings</b> - nine themes to pick from</figcaption>
                 </figure>
-                <figure>
+                <figure class="mark">
                     <img src="src/images/unisic-editor.webp" alt="Unisic editor" loading="lazy">
                     <figcaption><b>Editor</b> - polish every capture</figcaption>
                 </figure>
@@ -434,11 +437,11 @@
     </section>
 
     <section id="projects" class="reveal">
-        <span class="kicker">Projects</span>
+        <span class="sec-label">Projects</span>
         <h2>Other things I've made</h2>
         <p class="section-lead">Smaller projects from over the years - mostly web.</p>
-        <div class="projects-grid">
-            <a class="project-card" href="https://pretty-design.vercel.app" target="_blank" rel="noopener">
+        <div class="projects-grid stagger">
+            <a class="project-card mark" href="https://pretty-design.vercel.app" target="_blank" rel="noopener">
                 <img src="src/images/PrettyDesign.png" alt="Pretty Design website" loading="lazy">
                 <div class="card-body">
                     <h3>
@@ -449,7 +452,7 @@
                     <div class="card-tags"><span>Web</span><span>Design</span></div>
                 </div>
             </a>
-            <a class="project-card" href="https://netykieta.vercel.app" target="_blank" rel="noopener">
+            <a class="project-card mark" href="https://netykieta.vercel.app" target="_blank" rel="noopener">
                 <img src="src/images/netykieta.png" alt="Netykieta website" loading="lazy">
                 <div class="card-body">
                     <h3>
@@ -460,7 +463,7 @@
                     <div class="card-tags"><span>Web</span><span>Polish</span></div>
                 </div>
             </a>
-            <a class="project-card" href="https://deandark.me/space" target="_blank" rel="noopener">
+            <a class="project-card mark" href="https://deandark.me/space" target="_blank" rel="noopener">
                 <img src="src/images/DeanDarkSpace.png" alt="My Space website" loading="lazy">
                 <div class="card-body">
                     <h3>
@@ -475,7 +478,7 @@
     </section>
 
     <section id="journey" class="reveal">
-        <span class="kicker">Journey</span>
+        <span class="sec-label">Journey</span>
         <h2>The road so far</h2>
         <p class="section-lead">How I got from a curious kid to building software for Linux.</p>
         <div class="timeline">
@@ -495,19 +498,9 @@
                 <p>Joined the support team of the StartIT Discord bot and learned a lot about people, patience and explaining things clearly.</p>
             </div>
             <div class="tl-item">
-                <span class="tl-when">Running From Windows</span>
+                <span class="tl-when">Leaving Windows</span>
                 <h3>Switching to Linux</h3>
-                <p>I have switched to Linux and have been enjoying the open-source ecosystem.</p>
-            </div>
-            <div class="tl-item">
-                <span class="tl-when">Distro Hopping</span>
-                <h3>Exploring Different Linux Distributions</h3>
-                <p>I have tried out various Linux distributions to find the one that best suits my needs.</p>
-            </div>
-            <div class="tl-item">
-                <span class="tl-when">Learining new things</span>
-                <h3>Linux and UNIX philosophy</h3>
-                <p>After switching to Linux, I delved into the UNIX philosophy and learned to appreciate the simplicity and power of the command line.</p>
+                <p>Jumped ship, hopped across distros until Fedora stuck, and fell for the UNIX philosophy along the way - the terminal has been home ever since.</p>
             </div>
             <div class="tl-item">
                 <span class="tl-when">Today</span>
@@ -519,40 +512,44 @@
 
     <section class="reveal">
         <div class="cta">
+            <span class="corner c-tl" aria-hidden="true"></span>
+            <span class="corner c-tr" aria-hidden="true"></span>
+            <span class="corner c-bl" aria-hidden="true"></span>
+            <span class="corner c-br" aria-hidden="true"></span>
             <h2>Like what Unisic does?</h2>
             <p>It's free, open source and built for Linux. Grab it, try the workflow, and tell me what you think.</p>
             <div class="buttons">
-                <a class="btn btn-white" href="https://unisic.app" target="_blank" rel="noopener">Get Unisic</a>
-                <a class="btn btn-outline" href="https://github.com/unisic/unisic" target="_blank" rel="noopener">Star on GitHub</a>
+                <a class="btn btn-primary" href="https://unisic.app" target="_blank" rel="noopener">Get Unisic</a>
+                <a class="btn btn-ghost" href="https://github.com/unisic/unisic" target="_blank" rel="noopener">Star on GitHub</a>
             </div>
         </div>
     </section>
 
     <section id="contact" class="reveal">
-        <span class="kicker">Contact</span>
+        <span class="sec-label">Contact</span>
         <h2>Say hi</h2>
         <p class="section-lead">The fastest way to reach me is Discord, but any of these work.</p>
-        <div class="contact-grid">
-            <a class="contact-card" href="https://discord.com/users/328161853211541506" target="_blank" rel="noopener">
+        <div class="contact-grid stagger">
+            <a class="contact-card mark" href="https://discord.com/users/328161853211541506" target="_blank" rel="noopener">
                 <svg aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                     <path fill="currentColor" d="M19.73 4.87a18.2 18.2 0 0 0-4.6-1.44c-.21.4-.4.8-.58 1.21-1.69-.25-3.4-.25-5.1 0-.18-.41-.37-.82-.59-1.2-1.6.27-3.14.75-4.6 1.43A19.04 19.04 0 0 0 .96 17.7a18.43 18.43 0 0 0 5.63 2.87c.46-.62.86-1.28 1.2-1.98-.65-.25-1.29-.55-1.9-.92.17-.12.32-.24.47-.37 3.58 1.7 7.7 1.7 11.28 0l.46.37c-.6.36-1.25.67-1.9.92.35.7.75 1.35 1.2 1.98 2.03-.63 3.94-1.6 5.64-2.87.47-4.87-.78-9.09-3.3-12.83ZM8.3 15.12c-1.1 0-2-1.02-2-2.27 0-1.24.88-2.26 2-2.26s2.02 1.02 2 2.26c0 1.25-.89 2.27-2 2.27Zm7.4 0c-1.1 0-2-1.02-2-2.27 0-1.24.88-2.26 2-2.26s2.02 1.02 2 2.26c0 1.25-.88 2.27-2 2.27Z"></path>
                 </svg>
                 <span><b>@deandark</b><span>Discord</span></span>
             </a>
-            <a class="contact-card" href="https://discord.gg/hzd" target="_blank" rel="noopener">
+            <a class="contact-card mark" href="https://discord.gg/hzd" target="_blank" rel="noopener">
                 <svg aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                     <path fill="currentColor" d="M19.73 4.87a18.2 18.2 0 0 0-4.6-1.44c-.21.4-.4.8-.58 1.21-1.69-.25-3.4-.25-5.1 0-.18-.41-.37-.82-.59-1.2-1.6.27-3.14.75-4.6 1.43A19.04 19.04 0 0 0 .96 17.7a18.43 18.43 0 0 0 5.63 2.87c.46-.62.86-1.28 1.2-1.98-.65-.25-1.29-.55-1.9-.92.17-.12.32-.24.47-.37 3.58 1.7 7.7 1.7 11.28 0l.46.37c-.6.36-1.25.67-1.9.92.35.7.75 1.35 1.2 1.98 2.03-.63 3.94-1.6 5.64-2.87.47-4.87-.78-9.09-3.3-12.83ZM8.3 15.12c-1.1 0-2-1.02-2-2.27 0-1.24.88-2.26 2-2.26s2.02 1.02 2 2.26c0 1.25-.89 2.27-2 2.27Zm7.4 0c-1.1 0-2-1.02-2-2.27 0-1.24.88-2.26 2-2.26s2.02 1.02 2 2.26c0 1.25-.88 2.27-2 2.27Z"></path>
                 </svg>
                 <span><b>Horyzont Zdarzeń</b><span>My Discord server</span></span>
             </a>
-            <a class="contact-card" href="mailto:contact@deandark.me">
+            <a class="contact-card mark" href="mailto:contact@deandark.me">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                     <polyline points="22,6 12,13 2,6"></polyline>
                 </svg>
                 <span><b>contact@deandark.me</b><span>Email</span></span>
             </a>
-            <a class="contact-card" href="https://github.com/D3anDark" target="_blank" rel="noopener">
+            <a class="contact-card mark" href="https://github.com/D3anDark" target="_blank" rel="noopener">
                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
                 </svg>

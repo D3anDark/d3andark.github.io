@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const root = document.documentElement;
     const themeColor = document.querySelector('meta[name="theme-color"]');
 
-    const themeColors = { dark: '#0b060e', light: '#f5f1fa' };
+    const themeColors = { dark: '#0d0911', light: '#f7f4fb' };
 
     const applyTheme = (theme) => {
         root.setAttribute('data-theme', theme);
@@ -36,6 +36,20 @@ document.addEventListener('DOMContentLoaded', () => {
             toggle.setAttribute('aria-expanded', 'false');
         })
     );
+
+    // The hero selection frame shows its real rendered size, like a
+    // capture overlay would.
+    const capture = document.querySelector('.capture');
+    const captureDim = document.querySelector('.capture-dim');
+    if (capture && captureDim) {
+        const updateDim = () =>
+            (captureDim.textContent =
+                Math.round(capture.offsetWidth) + ' × ' + Math.round(capture.offsetHeight));
+        updateDim();
+        if ('ResizeObserver' in window) {
+            new ResizeObserver(updateDim).observe(capture);
+        }
+    }
 
     // Live Steam level — kept fresh by the steam-level GitHub Action.
     // Falls back silently to the value baked into the HTML.
