@@ -1,6 +1,6 @@
 name: Update Steam level
 
-# Keeps src/data/steam.json in sync with the current Steam level so the
+# Keeps src/lib/steam.json in sync with the current Steam level so the
 # site never needs a manual edit. Scrapes the public profile page (no API
 # key required) and commits only when the level actually changed.
 
@@ -11,6 +11,7 @@ on:
 
 permissions:
   contents: write
+  actions: write   # dispatch deploy.yml: pushes made with GITHUB_TOKEN do not trigger it
 
 concurrency:
   group: steam-level
@@ -41,22 +42,25 @@ jobs:
             exit 0
           fi
 
-          mkdir -p src/data
+          mkdir -p src/lib
           printf '{\n  "level": %s,\n  "updated": "%s"\n}\n' \
-            "$level" "$(date -u +%Y-%m-%d)" > src/data/steam.json
+            "$level" "$(date -u +%Y-%m-%d)" > src/lib/steam.json
           echo "Parsed Steam level: $level"
 
       - name: Commit if changed
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
           # Ignore the "updated" date churn: only commit when the level line differs.
-          if git diff -- src/data/steam.json | grep -qE '^[+-] *"level"'; then
+          if git diff -- src/lib/steam.json | grep -qE '^[+-] *"level"'; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add src/data/steam.json
+            git add src/lib/steam.json
             git commit -m "chore: update Steam level"
             git push
+            gh workflow run deploy.yml --ref "${GITHUB_REF_NAME}"
           else
-            git checkout -- src/data/steam.json
+            git checkout -- src/lib/steam.json
             echo "Level unchanged; nothing to commit."
           fi
