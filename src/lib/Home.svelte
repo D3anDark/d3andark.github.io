@@ -8,12 +8,42 @@
 	import Logo from './Logo.svelte';
 	import { copy, site, links, install, stack, setup, games, gallery, bench, moons, belt, steam } from './content.js';
 	import { reveal } from './inview.js';
+	import { embed } from './embed.js';
 
 	// One URL for both languages: the prerendered HTML is English, and the head
 	// script has already set <html lang> before hydration swaps the text.
 	let lang = $state(browser && document.documentElement.lang === 'pl' ? 'pl' : 'en');
 
 	const t = $derived(copy[lang]);
+
+	// English, like the prerendered HTML Discord reads it from.
+	const en = copy.en;
+	const card = embed([
+		{ type: 12, items: [{ media: { url: site + '/images/embed.webp' }, description: en.hero.note }] },
+		{
+			type: 9,
+			components: [{ type: 10, content: `# [DeanDark](${site})\n-# ${en.hero.kicker}\n${en.hero.lead}` }],
+			accessory: { type: 11, media: { url: 'https://cdn.deandark.me/DeanDarkOdznaka.png' } }
+		},
+		{ type: 14 },
+		{
+			type: 10,
+			content: [
+				`**[Unisic](${links.unisic})** · ${en.unisic.tagline}`,
+				`**[Tuni](${links.tuni})** · ${en.tuni.tagline}`,
+				`-# ${en.belt.title}: ${belt.map((b) => b.name).join(', ')}`
+			].join('\n')
+		},
+		{
+			type: 1,
+			components: [
+				{ type: 2, style: 5, url: site, label: 'deandark.me' },
+				{ type: 2, style: 5, url: links.github, label: 'GitHub' },
+				{ type: 2, style: 5, url: links.server, label: en.horizon.channels[1] }
+			]
+		}
+	]);
+
 	const secs = $derived([
 		['top', 'DeanDark'],
 		['signature', t.signature.label],
@@ -122,6 +152,7 @@
 	<meta property="og:locale" content={lang === 'pl' ? 'pl_PL' : 'en_US'} />
 	<meta property="og:locale:alternate" content={lang === 'pl' ? 'en_US' : 'pl_PL'} />
 	<meta name="twitter:card" content="summary" />
+	{@html card}
 </svelte:head>
 
 <svelte:window onscroll={schedule} onresize={schedule} onkeydown={(e) => e.key === 'Escape' && (menu = false)} />
