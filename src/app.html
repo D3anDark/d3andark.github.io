@@ -11,6 +11,13 @@
 			// Runs before first paint: flags JS for the reveal styles and picks the
 			// language (stored choice first, then the system list) for <html lang>.
 			(function () {
+				// Pages paths are case-sensitive and the Bingo project lives at /Bingo/,
+				// so /bingo/... lands on this site's 404 page; send it on.
+				var bingo = /^\/bingo(\/.*)?$/i.exec(location.pathname);
+				if (bingo && location.pathname.slice(0, 6) !== '/Bingo') {
+					location.replace('/Bingo' + (bingo[1] || '/') + location.search + location.hash);
+					return;
+				}
 				var html = document.documentElement;
 				html.classList.add('js');
 				var lang;
