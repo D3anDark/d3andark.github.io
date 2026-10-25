@@ -44,12 +44,13 @@ export const gallery = [
 	{ src: '/images/unisic-history.webp', w: 1060, h: 700 }
 ];
 
-/** From the Tuni README: 200 MiB of mixed output, best of two runs, one machine. */
+/** Top five from tuni.unisic.app: 200 MiB of mixed output, best of five runs, one machine. */
 export const bench = [
-	{ name: 'urxvt', engine: 'X11, CPU', mibs: 126.6 },
-	{ name: 'foot', engine: 'Wayland, CPU', mibs: 118.3 },
-	{ name: 'tuni', engine: 'GTK4 + libghostty-vt', mibs: 116.0 },
-	{ name: 'alacritty', engine: 'GPU, OpenGL', mibs: 112.0 }
+	{ name: 'tuni', engine: 'GTK4 + libghostty-vt', mibs: 169.1 },
+	{ name: 'kero', engine: 'Go + libghostty-vt', mibs: 139.4 },
+	{ name: 'foot', engine: 'Wayland, CPU', mibs: 133.1 },
+	{ name: 'urxvt', engine: 'X11, CPU', mibs: 123.6 },
+	{ name: 'alacritty', engine: 'GPU, OpenGL', mibs: 111.7 }
 ];
 
 /** Order matches copy.moons.items. */
@@ -182,19 +183,21 @@ export const copy = {
 			meta: 'Rust · GTK4 · libadwaita',
 			tagline: 'A terminal that keeps the whole workspace, not just the shell.',
 			body: 'Tuni is a native terminal workspace for Linux. Panes split in a niri-style layout and group into projects and tabs, with a file tree, a git panel that stages hunks and a source editor right beside the shells. Ghostty’s libghostty-vt does the emulation.',
-			credit: 'A ground-up Linux take on kero, the macOS workspace.',
+			credit: 'Built from scratch for Linux, with behaviour modelled on kero.',
 			alt: 'Tuni: a project list, two shell panes, a Rust source file and the git panel side by side',
 			features: [
 				'Hosts straight from ~/.ssh/config, one shared connection per machine, and SFTP for the machine a pane is on.',
+				'The Info page follows the focused pane: its processes with CPU and memory, and the TCP ports they listen on.',
+				'A command palette finds any action with its shortcut beside it, and every shortcut can be rebound.',
 				'A long command finishing in a tab you aren’t watching tells you what it was and how long it took.',
 				'Drag a tab or a whole project into its own window without restarting the shells inside.',
 				'A coding agent thinking in a pane spins on its tab and flags you when it’s done.',
-				'Ghostty’s 574 themes, painting the window chrome as well as the terminal.',
-				'Stores no secrets. SSH stays OpenSSH’s job, so passwords and 2FA are answered where they always were.'
+				'Ghostty’s 574 themes, painting the window chrome as well as the terminal, one for light and one for dark.',
+				'SSH stays OpenSSH’s job, so passwords and 2FA are answered where they always were. A password you keep goes into the desktop keyring.'
 			],
 			benchTitle: 'Throughput',
 			benchUnit: 'MiB/s',
-			benchNote: '200 MiB of mixed plain and SGR-coloured output, best of two runs, one machine. Higher is better.',
+			benchNote: '200 MiB of mixed plain and SGR-coloured output, best of five runs, one machine. Top five of nineteen terminals. Higher is better.',
 			site: 'tuni.unisic.app',
 			source: 'Source on GitHub'
 		},
@@ -360,19 +363,21 @@ export const copy = {
 			meta: 'Rust · GTK4 · libadwaita',
 			tagline: 'Terminal, który trzyma całą przestrzeń roboczą, nie tylko powłokę.',
 			body: 'Tuni to natywna przestrzeń robocza w terminalu dla Linuksa. Panele dzielą się w układzie w stylu niri i grupują w projekty i karty, a tuż obok powłok stoją drzewo plików, panel gita ze stage’owaniem pojedynczych fragmentów i edytor kodu. Emulację robi libghostty-vt z Ghostty.',
-			credit: 'Linuksowa implementacja od zera kero, przestrzeni roboczej z macOS.',
+			credit: 'Napisane od zera dla Linuksa, zachowaniem wzorowane na kero.',
 			alt: 'Tuni: lista projektów, dwa panele z powłoką, plik źródłowy w Ruście i panel gita obok siebie',
 			features: [
 				'Hosty prosto z ~/.ssh/config, jedno współdzielone połączenie na maszynę i SFTP dla maszyny, na której stoi panel.',
+				'Strona Info śledzi aktywny panel: jego procesy z CPU i pamięcią oraz porty TCP, na których nasłuchują.',
+				'Paleta poleceń znajduje każdą akcję razem z jej skrótem, a każdy skrót można przypisać na nowo.',
 				'Długie polecenie, które kończy się w karcie, na którą nie patrzysz, powie ci, czym było i ile trwało.',
 				'Przeciągasz kartę albo cały projekt do osobnego okna bez restartu powłok w środku.',
 				'Agent AI myślący w panelu kręci się na swojej karcie i daje znać, gdy skończy.',
-				'574 motywy z Ghostty, które malują też ramę okna, nie tylko terminal.',
-				'Nie przechowuje sekretów. SSH zostaje robotą OpenSSH, więc hasła i 2FA podajesz tam, gdzie zawsze.'
+				'574 motywy z Ghostty, które malują też ramę okna, nie tylko terminal, osobno dla jasnego i ciemnego trybu.',
+				'SSH zostaje robotą OpenSSH, więc hasła i 2FA podajesz tam, gdzie zawsze. Hasło, które zechcesz zapamiętać, trafia do systemowego menedżera haseł.'
 			],
 			benchTitle: 'Przepustowość',
 			benchUnit: 'MiB/s',
-			benchNote: '200 MiB zwykłego i kolorowanego (SGR) wyjścia, najlepszy z dwóch przebiegów, jedna maszyna. Więcej znaczy lepiej.',
+			benchNote: '200 MiB zwykłego i kolorowanego (SGR) wyjścia, najlepszy z pięciu przebiegów, jedna maszyna. Pierwsza piątka z dziewiętnastu terminali. Więcej znaczy lepiej.',
 			site: 'tuni.unisic.app',
 			source: 'Kod na GitHubie'
 		},
