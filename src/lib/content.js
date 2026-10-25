@@ -62,7 +62,7 @@ export const moons = [
 export const belt = [
 	{ name: 'DexSearch', year: 2026, tags: 'Kotlin · Android · PWA', href: 'https://deandark.me/dexsearch/' },
 	{ name: 'EduNote', year: 2026, tags: 'Tablet · Desktop', href: 'https://github.com/D3anDark/edunote-releases' },
-	{ name: 'Bingo', year: 2026, tags: 'Svelte · TypeScript', href: 'https://deandark.me/Bingo/', img: '/images/bingo.webp' },
+	{ name: 'Bingo', year: 2025, tags: 'Svelte · TypeScript', href: 'https://deandark.me/Bingo/', img: '/images/bingo.webp' },
 	{ name: 'Space', year: 2024, tags: 'JavaScript', href: 'https://deandark.me/space', img: '/images/space.webp' },
 	{ name: 'Netykieta', year: 2024, tags: 'HTML · PL', href: 'https://netykieta.vercel.app', img: '/images/netykieta.webp' },
 	{ name: 'Pretty Design', year: 2024, tags: 'CSS', href: 'https://pretty-design.vercel.app', img: '/images/pretty-design.webp' }
