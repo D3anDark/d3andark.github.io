@@ -946,12 +946,7 @@
 		padding: 24px;
 		border: 1px solid var(--line-2);
 		border-radius: var(--radius);
-		background:
-			linear-gradient(var(--accent), var(--accent)) top left / 18px 2px no-repeat,
-			linear-gradient(var(--accent), var(--accent)) top left / 2px 18px no-repeat,
-			linear-gradient(var(--accent), var(--accent)) bottom right / 18px 2px no-repeat,
-			linear-gradient(var(--accent), var(--accent)) bottom right / 2px 18px no-repeat,
-			var(--panel);
+		background: var(--panel);
 	}
 
 	.card-top {
