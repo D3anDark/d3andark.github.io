@@ -62,6 +62,7 @@ export const moons = [
 export const belt = [
 	{ name: 'DexSearch', year: 2026, tags: 'Kotlin · Android · PWA', href: 'https://deandark.me/dexsearch/' },
 	{ name: 'EduNote', year: 2026, tags: 'Tablet · Desktop', href: 'https://github.com/D3anDark/edunote-releases' },
+	{ name: 'Bingo', year: 2026, tags: 'Svelte · TypeScript', href: 'https://deandark.me/Bingo/', img: '/images/bingo.webp' },
 	{ name: 'Space', year: 2024, tags: 'JavaScript', href: 'https://deandark.me/space', img: '/images/space.webp' },
 	{ name: 'Netykieta', year: 2024, tags: 'HTML · PL', href: 'https://netykieta.vercel.app', img: '/images/netykieta.webp' },
 	{ name: 'Pretty Design', year: 2024, tags: 'CSS', href: 'https://pretty-design.vercel.app', img: '/images/pretty-design.webp' }
@@ -211,6 +212,7 @@ export const copy = {
 			items: [
 				'Offline Pokédex and team builder: every Pokémon, form, move and item from Gen 1 to 9, Smogon sets and Showdown export. Native on Android, an installable web app on iPhone, four languages.',
 				'Study notes for a stylus tablet and the computer: handwriting on A4 pages, live Markdown, a PDF beside the note, flashcards and an AI assistant.',
+				'Bingo boards for parties, streams and meetings. Play solo or with friends in a room behind an invite code, with a streamer mode that keeps the code off the screen.',
 				'A drifting space background with quotes about space and life that change over time.',
 				'The rules of the internet, written up in Polish.',
 				'Free designs to grab and reuse.'
@@ -388,6 +390,7 @@ export const copy = {
 			items: [
 				'Pokédex i kreator drużyn bez internetu: każdy Pokémon, forma, ruch i przedmiot z generacji 1 do 9, zestawy ze Smogona i eksport do Showdowna. Natywnie na Androidzie, jako instalowana aplikacja webowa na iPhonie, w czterech językach.',
 				'Notatki do nauki na tablet z rysikiem i komputer: pismo odręczne na stronach A4, Markdown na żywo, PDF obok notatki, fiszki i asystent AI.',
+				'Plansze bingo na imprezy, streamy i spotkania. Gra solo albo ze znajomymi w pokoju na kod zaproszenia, z trybem streamera, który chowa kod przed widzami.',
 				'Dryfujące kosmiczne tło z cytatami o kosmosie i życiu, które co jakiś czas się zmieniają.',
 				'Zasady netykiety spisane po polsku.',
 				'Darmowe projekty do wzięcia i ponownego użycia.'
