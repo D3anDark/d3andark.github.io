@@ -197,7 +197,7 @@ export const copy = {
 			],
 			benchTitle: 'Throughput',
 			benchUnit: 'MiB/s',
-			benchNote: '200 MiB of mixed plain and SGR-coloured output, best of five runs, one machine. Top five of nineteen terminals. Higher is better.',
+			benchNote: '200 MiB of mixed plain and SGR-coloured output, best of five runs, one machine. First of nineteen terminals, top five shown. Higher is better.',
 			site: 'tuni.unisic.app',
 			source: 'Source on GitHub'
 		},
@@ -377,7 +377,7 @@ export const copy = {
 			],
 			benchTitle: 'Przepustowość',
 			benchUnit: 'MiB/s',
-			benchNote: '200 MiB zwykłego i kolorowanego (SGR) wyjścia, najlepszy z pięciu przebiegów, jedna maszyna. Pierwsza piątka z dziewiętnastu terminali. Więcej znaczy lepiej.',
+			benchNote: '200 MiB zwykłego i kolorowanego (SGR) wyjścia, najlepszy z pięciu przebiegów, jedna maszyna. Pierwsze miejsce z dziewiętnastu terminali, pokazana najlepsza piątka. Więcej znaczy lepiej.',
 			site: 'tuni.unisic.app',
 			source: 'Kod na GitHubie'
 		},
